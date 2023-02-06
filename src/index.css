@@ -7,4 +7,16 @@
         @apply bg-black text-white;
         font-family: "Karla", sans-serif;
     }
+    h1 {
+        @apply font-bold text-6xl;
+    }
+    h2 {
+        @apply font-bold text-3xl;
+    }
+    h3 {
+        @apply font-bold text-2xl;
+    }
+    p {
+        @apply opacity-80;
+    }
 }

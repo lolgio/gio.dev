@@ -1,5 +1,5 @@
-import { Component, createSignal } from "solid-js";
-import { useLocation, useBeforeLeave, BeforeLeaveEventArgs } from "@solidjs/router";
+import { Component, createEffect, createSignal } from "solid-js";
+import { useLocation, useBeforeLeave } from "@solidjs/router";
 import { Motion } from "@motionone/solid";
 import { spring } from "motion";
 import Navlink from "./Navlink";
@@ -12,21 +12,25 @@ const indicatorOffsets: Record<string, number> = {
 };
 
 const Navbar: Component = () => {
-    const [currentPathname, setCurrentPathname] = createSignal(useLocation().pathname);
-    const [oldPathname, setOldPathname] = createSignal(useLocation().pathname);
+    const location = useLocation();
+    const [currentPathname, setCurrentPathname] = createSignal(location.pathname);
+    const [oldPathname, setOldPathname] = createSignal(location.pathname);
 
-    useBeforeLeave((e: BeforeLeaveEventArgs) => {
+    createEffect(() => {
+        setCurrentPathname(location.pathname);
+    }, [location]);
+
+    useBeforeLeave(() => {
         setOldPathname(currentPathname());
-        setCurrentPathname(e.to.toString());
     });
 
     return (
         <>
             <nav class="flex flex-row gap-24 py-8 ml-24 sticky">
-                <Navlink route="/" label="landing" />
-                <Navlink route="/about" label="about" />
-                <Navlink route="/skills" label="skills" />
-                <Navlink route="/projects" label="projects" />
+                <Navlink route="/" label="landing" activePath={currentPathname()} />
+                <Navlink route="/about" label="about" activePath={currentPathname()} />
+                <Navlink route="/skills" label="skills" activePath={currentPathname()} />
+                <Navlink route="/projects" label="projects" activePath={currentPathname()} />
                 <Motion.div
                     initial={{ x: indicatorOffsets[oldPathname()] }}
                     animate={{ x: indicatorOffsets[currentPathname()] }}

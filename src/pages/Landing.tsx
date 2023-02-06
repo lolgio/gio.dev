@@ -16,13 +16,13 @@ const Landing: Component = () => {
                         <br />
                         I'm Gio
                     </h1>
-                    <h2 class="text-2xl font-light mt-4">
+                    <h3 class="font-light mt-4">
                         fullstack web developer.
                         <br />
                         22 m.
                         <br />
                         <FiMapPin class="inline-block stroke-highlight" /> auckland, nz.
-                    </h2>
+                    </h3>
                     <br />
                     <div id="socials" class="flex gap-8 mt-8">
                         <a href="https://github.com/lolgio" target="_blank">
