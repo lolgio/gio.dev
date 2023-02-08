@@ -14,7 +14,7 @@ const Navlink: Component<NavlinkProps> = (props) => {
 
     return (
         <A
-            class={`text-center text-white ${isActive() ? "opacity-100" : "opacity-80"}`}
+            class={`text-center text-white py-8 ${isActive() ? "opacity-100" : "opacity-80"}`}
             href={props.route}
         >
             {props.label}

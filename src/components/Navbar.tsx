@@ -26,7 +26,7 @@ const Navbar: Component = () => {
 
     return (
         <>
-            <nav class="flex flex-row gap-24 py-8 ml-24 sticky">
+            <nav class="flex flex-row gap-24 ml-24 sticky">
                 <Navlink route="/" label="landing" activePath={currentPathname()} />
                 <Navlink route="/about" label="about" activePath={currentPathname()} />
                 <Navlink route="/skills" label="skills" activePath={currentPathname()} />
@@ -39,7 +39,7 @@ const Navbar: Component = () => {
                         easing: spring({ velocity: 200, damping: 15 }),
                     }}
                     id="page-indicator"
-                    class="absolute h-[1px] w-16 mt-14 bg-white"
+                    class="absolute h-[1px] w-16 mt-[88px] bg-white"
                 ></Motion.div>
             </nav>
             <hr class="opacity-20" />
