@@ -13,7 +13,7 @@ const About: Component = () => {
                     the ever-increasing complexity of the web, simplicity is a dying art.
                 </p>
                 <br />
-                <h3 class="mb-3">me</h3>
+                <h3 class="mb-2">me</h3>
                 <p>
                     I have a bachelor's of science in computer science from the University of
                     Auckland.
@@ -23,7 +23,7 @@ const About: Component = () => {
                     projects, to large production applications for clients.
                 </p>
                 <br />
-                <h3 class="mb-3">site</h3>
+                <h3 class="mb-2">site</h3>
                 <p>
                     This site was built using&nbsp;
                     <a href="https://www.solidjs.com/" class="text-highlight">

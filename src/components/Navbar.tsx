@@ -1,5 +1,5 @@
-import { Component, createEffect, createSignal } from "solid-js";
-import { useLocation, useBeforeLeave } from "@solidjs/router";
+import { Component, createSignal } from "solid-js";
+import { useLocation, useBeforeLeave, BeforeLeaveEventArgs } from "@solidjs/router";
 import { Motion } from "@motionone/solid";
 import { spring } from "motion";
 import Navlink from "./Navlink";
@@ -13,27 +13,28 @@ const indicatorOffsets: Record<string, number> = {
 
 const Navbar: Component = () => {
     const location = useLocation();
-    const [currentPathname, setCurrentPathname] = createSignal(location.pathname);
-    const [oldPathname, setOldPathname] = createSignal(location.pathname);
+    const [pathHistory, setPathHistory] = createSignal({
+        current: location.pathname,
+        previous: location.pathname,
+    });
 
-    createEffect(() => {
-        setCurrentPathname(location.pathname);
-    }, [location]);
-
-    useBeforeLeave(() => {
-        setOldPathname(currentPathname());
+    useBeforeLeave((e: BeforeLeaveEventArgs) => {
+        setPathHistory({
+            current: e.to.toString(),
+            previous: pathHistory().current,
+        });
     });
 
     return (
         <>
             <nav class="flex flex-row gap-24 ml-24 sticky">
-                <Navlink route="/" label="landing" activePath={currentPathname()} />
-                <Navlink route="/about" label="about" activePath={currentPathname()} />
-                <Navlink route="/skills" label="skills" activePath={currentPathname()} />
-                <Navlink route="/projects" label="projects" activePath={currentPathname()} />
+                <Navlink route="/" label="landing" activePath={pathHistory().current} />
+                <Navlink route="/about" label="about" activePath={pathHistory().current} />
+                <Navlink route="/skills" label="skills" activePath={pathHistory().current} />
+                <Navlink route="/projects" label="projects" activePath={pathHistory().current} />
                 <Motion.div
-                    initial={{ x: indicatorOffsets[oldPathname()] }}
-                    animate={{ x: indicatorOffsets[currentPathname()] }}
+                    initial={{ x: indicatorOffsets[pathHistory().previous] }}
+                    animate={{ x: indicatorOffsets[pathHistory().current] }}
                     transition={{
                         duration: 0.2,
                         easing: spring({ velocity: 200, damping: 15 }),

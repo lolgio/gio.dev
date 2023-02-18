@@ -8,6 +8,7 @@ import { Presence } from "@motionone/solid";
 const About = lazy(() => import("./pages/About"));
 const Landing = lazy(() => import("./pages/Landing"));
 const Skills = lazy(() => import("./pages/Skills"));
+const Projects = lazy(() => import("./pages/Projects"));
 
 const App: Component = () => {
     return (
@@ -18,6 +19,7 @@ const App: Component = () => {
                     <Route path="/" component={Landing}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/skills" component={Skills}></Route>
+                    <Route path="/projects" component={Projects}></Route>
                 </Routes>
             </Presence>
         </>
