@@ -45,7 +45,8 @@ const Landing: Component = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.4, delay: 0.2, easing: "ease" }}
                         src={NzMap}
-                        class="h-2/3 will-change-transform"
+                        class="h-2/3 will-change-transform select-none"
+                        draggable={false}
                     />
                     <div class="absolute translate-x-[224px] -translate-y-[9px]">
                         <PinDrop />
