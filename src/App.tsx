@@ -1,6 +1,6 @@
 import type { Component } from "solid-js";
 import { lazy } from "solid-js";
-import { Routes, Route, Router } from "@solidjs/router";
+import { Routes, Route } from "@solidjs/router";
 
 import Navbar from "./components/Navbar";
 import { Presence } from "@motionone/solid";

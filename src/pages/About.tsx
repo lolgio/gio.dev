@@ -3,7 +3,7 @@ import PageWrapper from "./PageWrapper";
 
 const About: Component = () => {
     return (
-        <PageWrapper>
+        <PageWrapper title="gio.dev - about">
             <div class="flex flex-col mt-24 w-[80%] mx-16 xl:w-[32%] lg:w-[50%] lg:mx-48 md:w-[50%] md:mx-28 sm:w-[70%] sm:mx-20">
                 <h2 class="mb-5">about</h2>
                 <p>

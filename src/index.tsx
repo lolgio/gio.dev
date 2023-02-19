@@ -4,6 +4,7 @@ import { render } from "solid-js/web";
 import { Router } from "@solidjs/router";
 
 import App from "./App";
+import { MetaProvider } from "@solidjs/meta";
 
 const root = document.getElementById("root");
 
@@ -15,9 +16,11 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
     () => (
-        <Router>
-            <App />
-        </Router>
+        <MetaProvider>
+            <Router>
+                <App />
+            </Router>
+        </MetaProvider>
     ),
     root!
 );
