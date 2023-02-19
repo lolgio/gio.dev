@@ -26,8 +26,8 @@ const Navbar: Component = () => {
     });
 
     return (
-        <>
-            <nav class="flex flex-row gap-24 ml-24 sticky">
+        <div class="w-full sticky z-10 bg-black top-0">
+            <nav class="flex flex-row gap-24 ml-24">
                 <Navlink route="/" label="landing" activePath={pathHistory().current} />
                 <Navlink route="/about" label="about" activePath={pathHistory().current} />
                 <Navlink route="/skills" label="skills" activePath={pathHistory().current} />
@@ -44,7 +44,7 @@ const Navbar: Component = () => {
                 ></Motion.div>
             </nav>
             <hr class="opacity-20" />
-        </>
+        </div>
     );
 };
 

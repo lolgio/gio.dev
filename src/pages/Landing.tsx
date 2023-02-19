@@ -1,16 +1,14 @@
 import type { Component } from "solid-js";
 import { FiMapPin, FiGithub, FiTwitter } from "solid-icons/fi";
 import { FaBrandsLinkedinIn } from "solid-icons/fa";
-import { Motion } from "@motionone/solid";
-import NzMap from "../assets/nz.svg";
 import PinDrop from "../components/PinDrop";
 import PageWrapper from "./PageWrapper";
 
 const Landing: Component = () => {
     return (
         <PageWrapper>
-            <div class="flex flex-row gaps-48 justify-center w-full h-full">
-                <div class="flex flex-col justify-center my-auto">
+            <div class="flex flex-row mx-16 h-full justify-between 2xl:mx-80 xl:mx-64 lg:mx-46 md:mx-20 sm:mx-40">
+                <div class="flex flex-col justify-center my-auto mt-56">
                     <h1 class="text-6xl font-bold">
                         hi,
                         <br />
@@ -39,18 +37,8 @@ const Landing: Component = () => {
                         </a>
                     </div>
                 </div>
-                <div class="flex ml-96 mt-32 my-auto">
-                    <Motion.img
-                        initial={{ opacity: 0, x: 200 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1.4, delay: 0.2, easing: "ease" }}
-                        src={NzMap}
-                        class="h-2/3 will-change-transform select-none"
-                        draggable={false}
-                    />
-                    <div class="absolute translate-x-[224px] -translate-y-[9px]">
-                        <PinDrop />
-                    </div>
+                <div class="mt-32 my-auto hidden md:flex">
+                    <PinDrop />
                 </div>
             </div>
         </PageWrapper>

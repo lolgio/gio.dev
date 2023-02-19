@@ -80,10 +80,10 @@ const Skills: Component = () => {
 
     return (
         <PageWrapper>
-            <div class="flex flex-col h-full justify-center ml-48">
+            <div class="flex flex-col mx-12 mt-12 xl:mx-48 lg:mt-24 lg:mx-36 md:mx-20 sm:mx-14">
                 <h3 class="mb-2">primary</h3>
                 <p>technologies I enjoy and use often</p>
-                <div class="flex flex-row gap-8 mt-4 mb-8">
+                <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[1]}>
                         {(skill, i) => (
                             <SkillContainer name={skill.name} icon={skill.icon} offset={i()} />
@@ -92,7 +92,7 @@ const Skills: Component = () => {
                 </div>
                 <h3 class="mb-2">secondary</h3>
                 <p>technologies I am proficient with</p>
-                <div class="flex flex-row gap-8 mt-4 mb-8">
+                <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[2]}>
                         {(skill, i) => (
                             <SkillContainer name={skill.name} icon={skill.icon} offset={i()} />
@@ -101,7 +101,7 @@ const Skills: Component = () => {
                 </div>
                 <h3 class="mb-2">tertiary</h3>
                 <p>technologies I have used in the past</p>
-                <div class="flex flex-row gap-8 mt-4 mb-8">
+                <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[3]}>
                         {(skill, i) => (
                             <SkillContainer name={skill.name} icon={skill.icon} offset={i()} />
