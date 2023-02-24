@@ -8,7 +8,7 @@ const Landing: Component = () => {
     return (
         <PageWrapper title="gio.dev - landing">
             <div class="flex flex-row mx-16 h-full justify-between 2xl:mx-80 xl:mx-64 lg:mx-46 md:mx-20 sm:mx-40">
-                <div class="flex flex-col justify-center my-auto mt-56">
+                <div class="flex flex-col justify-center my-auto mt-36 sm:mt-56">
                     <h1 class="text-6xl font-bold">
                         hi,
                         <br />
@@ -37,7 +37,7 @@ const Landing: Component = () => {
                         </a>
                     </div>
                 </div>
-                <div class="mt-32 my-auto hidden md:flex">
+                <div class="mt-28 my-auto hidden md:flex">
                     <PinDrop />
                 </div>
             </div>

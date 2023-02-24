@@ -15,7 +15,7 @@ const Project: Component<{
     };
 
     return (
-        <div class="flex flex-col pl-8 pt-8 max-w-sm xl:max-w-md">
+        <div class="flex flex-col pl-4 sm:pl-8 pt-8 max-w-sm xl:max-w-md">
             <div class="flex flex-row justify-between [&>svg]:w-7 [&>svg]:h-7">
                 <h3 class="mb-2">{props.name}</h3>
                 {languageIcons[props.language.toLowerCase()]}

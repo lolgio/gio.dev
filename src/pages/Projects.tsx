@@ -5,7 +5,7 @@ import PageWrapper from "./PageWrapper";
 const Projects: Component = () => {
     return (
         <PageWrapper title="gio.dev - projects">
-            <div class="flex flex-col mt-24 mx-16 lg:mx-36 md:mx-28 sm:mx-20">
+            <div class="flex flex-col my-12 mx-8 lg:mx-36 lg:my-24 md:mx-28 sm:mx-20">
                 <h2 class="mb-2">solo</h2>
                 <div class="flex flex-row flex-wrap gap-8 mb-6 divide-white divide-y-[1px] lg:divide-y-0 lg:divide-x-[1px] divide-opacity-20">
                     <Project
