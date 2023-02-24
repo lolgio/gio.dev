@@ -31,7 +31,6 @@ import { RiFinanceVipDiamondLine } from "solid-icons/ri";
 import { FaBrandsJava } from "solid-icons/fa";
 import PageWrapper from "./PageWrapper";
 import SkillContainer from "../components/SkillContainer";
-import { Title } from "@solidjs/meta";
 
 const Skills: Component = () => {
     interface Skill {
@@ -81,7 +80,7 @@ const Skills: Component = () => {
 
     return (
         <PageWrapper title="gio.dev - skills">
-            <div class="flex flex-col mx-12 mt-12 xl:mx-48 lg:mt-24 lg:mx-36 md:mx-20 sm:mx-14">
+            <div class="flex flex-col mx-12 mt-12 lg:mt-24 lg:mx-36 md:mx-20 sm:mx-14">
                 <h3 class="mb-2">primary</h3>
                 <p>technologies I enjoy and use often</p>
                 <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
