@@ -82,7 +82,9 @@ const Skills: Component = () => {
         <PageWrapper title="gio.dev - skills">
             <div class="flex flex-col mx-10 my-12 lg:my-24 lg:mx-36 md:mx-20 sm:mx-14">
                 <h3 class="mb-2">primary</h3>
-                <p>technologies I enjoy and use often</p>
+                <p>
+                    technologies I <span class="text-highlight">enjoy</span> and use often
+                </p>
                 <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[1]}>
                         {(skill, i) => (
@@ -91,7 +93,9 @@ const Skills: Component = () => {
                     </For>
                 </div>
                 <h3 class="mb-2">secondary</h3>
-                <p>technologies I am proficient with</p>
+                <p>
+                    technologies I am <span class="text-highlight">proficient</span> with
+                </p>
                 <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[2]}>
                         {(skill, i) => (
@@ -100,7 +104,9 @@ const Skills: Component = () => {
                     </For>
                 </div>
                 <h3 class="mb-2">tertiary</h3>
-                <p>technologies I have used in the past</p>
+                <p>
+                    technologies I have <span class="text-highlight">used</span> in the past
+                </p>
                 <div class="flex flex-row gap-8 mt-4 mb-8 max-w-screen-xl flex-wrap">
                     <For each={skills[3]}>
                         {(skill, i) => (

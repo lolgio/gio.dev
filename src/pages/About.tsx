@@ -31,11 +31,8 @@ const About: Component = () => {
                     </a>
                     , a reactive framework for building user interfaces with similar syntax and
                     state management to React. I originally built this site using Astro and React,
-                    but Astro is a MPA framework and I didn't like how navigation felt.
-                    <br />
-                    Other technologies used include: Tailwind, Vite, and MotionOne.
-                    <br />
-                    Check out the source code at the&nbsp;
+                    but Astro is a MPA framework and I didn't like how navigation felt. Check out
+                    the source code at the&nbsp;
                     <a href="https://github.com/lolgio/new-lolgio.dev" class="text-highlight">
                         Github repo
                     </a>
