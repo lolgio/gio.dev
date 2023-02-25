@@ -43,7 +43,7 @@ const BurgerNav: Component<{ activePath: string }> = (props) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    class="sm:hidden absolute left-0 z-10 bg-black mt-[1px]"
+                    class="sm:hidden absolute left-0 z-10 bg-black/90 backdrop-blur-sm mt-[1px]"
                 >
                     <div class="flex flex-col py-5">
                         <Navlink route="/" label="landing" activePath={props.activePath} />
