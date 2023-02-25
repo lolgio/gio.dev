@@ -6,6 +6,10 @@
     body {
         @apply bg-black text-white;
         font-family: "Karla", sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
     }
     h1 {
         @apply font-bold text-6xl;
