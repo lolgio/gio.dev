@@ -6,7 +6,7 @@ const PinDrop: Component = () => {
     return (
         <>
             <Motion.img
-                initial={{ opacity: 0, x: 200 }}
+                initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.4, delay: 0.2, easing: "ease" }}
                 src={NzMap}
