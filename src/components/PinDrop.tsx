@@ -10,7 +10,8 @@ const PinDrop: Component = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.4, delay: 0.2, easing: "ease" }}
                 src={NzMap}
-                class="h-2/3 will-change-transform select-none"
+                class="h-[39rem] w-auto will-change-transform select-none object-scale-down"
+                alt="New Zealand Outline"
                 draggable={false}
             />
             <div class="absolute translate-x-[224px] -translate-y-[9px]">

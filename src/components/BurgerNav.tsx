@@ -4,6 +4,7 @@ import { CgClose } from "solid-icons/cg";
 import Navlink from "./Navlink";
 import { useIsRouting } from "@solidjs/router";
 import { Motion } from "@motionone/solid";
+import { createEventListener } from "@solid-primitives/event-listener";
 
 const indicatorOffsets: Record<string, number> = {
     "/": 33,
@@ -18,6 +19,12 @@ const BurgerNav: Component<{ activePath: string }> = (props) => {
 
     createEffect(() => {
         if (isRouting()) {
+            setIsOpen(false);
+        }
+    });
+
+    createEventListener(document.body, "click", (e) => {
+        if (isOpen() && !e.composedPath().some((el) => el === document.querySelector("nav"))) {
             setIsOpen(false);
         }
     });

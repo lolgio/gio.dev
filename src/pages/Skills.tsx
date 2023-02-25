@@ -79,7 +79,7 @@ const Skills: Component = () => {
     };
 
     return (
-        <PageWrapper title="gio.dev - skills">
+        <PageWrapper>
             <div class="flex flex-col mx-10 my-12 lg:my-24 lg:mx-36 md:mx-28 sm:mx-14">
                 <h3 class="mb-2">primary</h3>
                 <p>

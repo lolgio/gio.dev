@@ -1,5 +1,4 @@
 import { Motion } from "@motionone/solid";
-import { Title } from "@solidjs/meta";
 import { Component, JSXElement } from "solid-js";
 
 const PageWrapper: Component<{
@@ -14,7 +13,6 @@ const PageWrapper: Component<{
             transition={{ duration: 0.3 }}
             class="min-h-[calc(100vh-8rem)] overflow-hidden"
         >
-            <Title>{props.title ?? "gio.dev"}</Title>
             {props.children}
         </Motion.div>
     );

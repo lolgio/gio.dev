@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@motionone/solid': ^10.15.5
-  '@solidjs/meta': ^0.28.2
+  '@solid-primitives/event-listener': ^2.2.6
   '@solidjs/router': ^0.7.0
   autoprefixer: ^10.4.13
   motion: ^10.15.5
@@ -17,7 +17,7 @@ specifiers:
 
 dependencies:
   '@motionone/solid': 10.15.5_solid-js@1.6.10
-  '@solidjs/meta': 0.28.2_solid-js@1.6.10
+  '@solid-primitives/event-listener': 2.2.6_solid-js@1.6.10
   '@solidjs/router': 0.7.0_solid-js@1.6.10
   motion: 10.15.5
   solid-icons: 1.0.4_solid-js@1.6.10
@@ -679,6 +679,15 @@ packages:
       fastq: 1.14.0
     dev: true
 
+  /@solid-primitives/event-listener/2.2.6_solid-js@1.6.10:
+    resolution: {integrity: sha512-Lb2q888Apv8wqgZ3WvPlt8ic2rEmHx6QT8d3pgi+JRSIRNwAysE6PZDmbwT6/hzzP1TIQG0IRZwh5tomfuqlaQ==}
+    peerDependencies:
+      solid-js: ^1.6.0
+    dependencies:
+      '@solid-primitives/utils': 5.1.0_solid-js@1.6.10
+      solid-js: 1.6.10
+    dev: false
+
   /@solid-primitives/props/3.0.5_solid-js@1.6.10:
     resolution: {integrity: sha512-PRfHSY8b+CxSAgGUcGf08xh+uPSRoqotTaQDiUrshS50TC/TQBDL1VFfVcaeHKiQQgPhFlBuoBWNZHlHW2aNiA==}
     peerDependencies:
@@ -692,14 +701,6 @@ packages:
     resolution: {integrity: sha512-1qmY9VaHWbEolBGhszqq7ziPJpXOXtcsQ14I7j8o/57bvfBQtwZ64idJrSdPBPIGzKSyPVZ1olYWz4yfitTBrA==}
     peerDependencies:
       solid-js: ^1.6.0
-    dependencies:
-      solid-js: 1.6.10
-    dev: false
-
-  /@solidjs/meta/0.28.2_solid-js@1.6.10:
-    resolution: {integrity: sha512-avlLgBPdk4KVxzRGFlYp/MIJo8B5jVgXPgk6OUnUP8km21Z+ovO+DUd7ZPA7ejv8PBdWi9GE3zCzw8RU2YuV2Q==}
-    peerDependencies:
-      solid-js: '>=1.4.0'
     dependencies:
       solid-js: 1.6.10
     dev: false

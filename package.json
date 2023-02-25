@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@motionone/solid": "^10.15.5",
-    "@solidjs/meta": "^0.28.2",
+    "@solid-primitives/event-listener": "^2.2.6",
     "@solidjs/router": "^0.7.0",
     "motion": "^10.15.5",
     "solid-icons": "^1.0.4",
