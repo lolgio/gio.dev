@@ -11,7 +11,7 @@ const PageWrapper: Component<{
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            class="min-h-[calc(100vh-8rem)] overflow-hidden"
+            class="min-h-[calc(100vh-8rem)]"
         >
             {props.children}
         </Motion.div>
