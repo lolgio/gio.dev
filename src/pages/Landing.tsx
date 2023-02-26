@@ -19,7 +19,14 @@ const Landing: Component = () => {
                         <br />
                         22 m.
                         <br />
-                        <FiMapPin class="inline-block stroke-highlight" /> auckland, nz.
+                        <FiMapPin class="inline-block stroke-highlight" />{" "}
+                        <a
+                            href="https://www.google.com/maps/place/Auckland/"
+                            target="_blank"
+                            class="hover:opacity-80 hover:cursor-pointer"
+                        >
+                            auckland, nz.
+                        </a>
                     </h3>
                     <br />
                     <div id="socials" class="flex gap-8 mt-8">

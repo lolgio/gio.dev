@@ -24,14 +24,17 @@ const About: Component = () => {
                 <h3 class="mb-2">site</h3>
                 <p>
                     This site was built using&nbsp;
-                    <a href="https://www.solidjs.com/" class="text-highlight">
+                    <a href="https://www.solidjs.com/" class="text-highlight hover:underline">
                         SolidJS
                     </a>
                     , a reactive framework for building user interfaces with similar syntax and
                     state management to React. I originally built this site using Astro and React,
                     but Astro is a MPA framework and I didn't like how navigation felt. Check out
                     the source code at the&nbsp;
-                    <a href="https://github.com/lolgio/new-lolgio.dev" class="text-highlight">
+                    <a
+                        href="https://github.com/lolgio/new-lolgio.dev"
+                        class="text-highlight hover:underline"
+                    >
                         Github repo
                     </a>
                     .

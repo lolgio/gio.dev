@@ -49,7 +49,7 @@ const Skills: Component = () => {
             { name: "trpc", icon: <SiTrpc /> },
             { name: "Prisma", icon: <SiPrisma /> },
             { name: "zod", icon: <RiFinanceVipDiamondLine /> },
-            { name: "obsidian", icon: <SiObsidian /> },
+            { name: "Obsidian", icon: <SiObsidian /> },
         ],
         2: [
             // Secondary
