@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply bg-black text-white 2xl:overflow-hidden;
+        @apply bg-black text-white overflow-x-hidden;
         font-family: "Karla", sans-serif;
         -webkit-tap-highlight-color: transparent;
         -webkit-font-smoothing: antialiased;
