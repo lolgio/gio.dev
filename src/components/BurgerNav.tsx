@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal, Show } from "solid-js";
+import { Component, createEffect, createMemo, createSignal, Show } from "solid-js";
 import { HiOutlineMenu } from "solid-icons/hi";
 import { CgClose } from "solid-icons/cg";
 import Navlink from "./Navlink";
@@ -17,10 +17,8 @@ const BurgerNav: Component<{ activePath: string }> = (props) => {
     const [isOpen, setIsOpen] = createSignal(false);
     const isRouting = useIsRouting();
 
-    createEffect(() => {
-        if (isRouting()) {
-            setIsOpen(false);
-        }
+    createMemo(() => {
+        if (isRouting()) setIsOpen(false);
     });
 
     createEventListener(document.body, "click", (e) => {
