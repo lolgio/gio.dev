@@ -4,6 +4,9 @@ import { FaBrandsLinkedinIn } from "solid-icons/fa";
 import PinDrop from "../components/PinDrop";
 import PageWrapper from "./PageWrapper";
 
+const age =
+    new Date(Date.now() - Date.parse("05 Jul 2000 00:00:00 GMT+13")).getUTCFullYear() - 1970;
+
 const Landing: Component = () => {
     return (
         <PageWrapper>
@@ -17,7 +20,7 @@ const Landing: Component = () => {
                     <h3 class="font-light mt-4">
                         fullstack web developer.
                         <br />
-                        22 m.
+                        {age} m.
                         <br />
                         <FiMapPin class="inline-block stroke-highlight" />{" "}
                         <a
